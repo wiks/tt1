@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev-task</title>
+    <link rel="stylesheet" href="{% static 'css/s.css' %}">
+    <script src="{% static 'js/angular.js' %}"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+</head>
+<body>
+<header>
+    {% include "header.html" %}
+</header>
+<main>
+    <article id="task-descr">
+    {% include "task_content.html" %}
+    <p>
+        <a href="/" id="alinkback">powrót do początku :-&rang;</a>
+    </p>
+    <br>
+    </article>
+
+<aside>
+<div id="cont-vers">
+    <h2>Rozwiązanie:</h2>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</aside>
+</main>
+
+<hr/>
+<footer>
+    {% include "footer.html" %}
+</footer>
+
+</body>
+</html>

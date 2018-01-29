@@ -1,0 +1,9 @@
+<div id="cont-vers">
+    {% if requirements %}
+    <h2>Użyto:</h2>
+        requirements &lang;z pliku&rang;:<br>
+        {% for one in requirements %}
+            {{ one }},
+        {% endfor %}
+    {% endif %}
+</div>

@@ -1,0 +1,10 @@
+jeśli pracujemy z VIRTUALENV, należy ustawić DEBUG = True w mysite/mysite/settings.py
+
+wiks@wiks:~/Pulpit/tt1$ cd mysite
+wiks@wiks:~/Pulpit/tt1/mysite$ source venv/bin/activate
+(venv) wiks@wiks:~/Pulpit/tt1/mysite$ pip install -r requirements.txt
+(venv) wiks@wiks:~/Pulpit/tt1/mysite$ python manage.py test
+(venv) wiks@wiks:~/Pulpit/tt1/mysite$ python manage.py runserver
+[...]
+(venv) wiks@wiks:~/Pulpit/tt1/mysite$ deactivate
+

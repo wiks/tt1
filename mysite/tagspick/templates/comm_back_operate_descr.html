@@ -1,0 +1,14 @@
+<li>próbuję dopasować URL lub też URL z dodanym protokołem http, https i sprawdzić co zwraca [ find_first_exists_url&lang;&rang; w klasie myurlsy.MyUrls&lang;&rang; ],</li>
+<li>jeśli znaleziono taki pasujący adres, odszukuję w nim META TAG dla NAME = &quot;keywords&quot; &lang;niezależnie od wielkości znaków - wyr. regularne dopasowane w BeautifullSoup&rang;</li>
+<li>odnalezione keywordsy dzielę po przecinkach i dodaję do listy, usuwam wszystkie poprzedzające i następujące białe znaki za keywordsami,</li>
+<li>pobieram też body strony jako text i zastępuję znaki końca linii oraz wielokrotnych spacji pojedynczymi spacjami,</li>
+<li>zliczam ilość keywords,</li>
+<li>w treści znajduję keywordsy &lang; bibl. NLTK w metodzie find_and_count_tags_in_content w klasie text2tags.MyTags&lang;&rang; &rang; </li>
+<li>zwracam wszystko jako DICT zmieniony na JSON w postaci:</li>
+<ul>
+    <li>&quot;url_checked&quot;: - dopasowany adres URL,</li>
+    <li>&quot;mismath_url&quot;: - świadczy o tym czy adres dopasowany jest identyczny z tym zleconym przez użytkownika,</li>
+    <li>&quot;len_keywords&quot;: - wskazuje liczbę znalezionych tagów,</li>
+    <li>&quot;output_list&quot;: - zawiera listę/array znalezionych tagów, które występują w treści,</li>
+    <li>&quot;remain&quot;: - string tagów z META, które nie występują w treści,</li>
+</ul>

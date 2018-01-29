@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<p>
+Wykorzystam mechanizm <a href="/0" id="alink0">Python --> Django --> FORM --> POST --> /testurl --> odpowiedź</a>
+i parsowanie do HTML poprzez Djangowe mechanizmy:<br>
+</p>
+<p>
+Wykorzystam mechanizm <a href="/a" id="alinka">Python --> Django --> AngularJS --> FORM --> POST --> /testurl --> odpowiedź</a>
+i parsowanie do HTML poprzez Angular'owo-Django'we mechanizmy:<br>
+</p>
+<hr/>
+<p>
+Proszę zwrócić też uwagę na podobne rozwiązanie (wyszukiwanie i analizę tagów), wykonane przeze mnie wcześniej.<br>
+Jest dostępne pod adresem:<br>
+<a href="http://paplacz.wiks.eu/">http://paplacz.wiks.eu/</a><br>
+a właściwie np. tutaj:
+<a href="http://paplacz.wiks.eu/tagi/?d=gchart_m201504_1_.js">http://paplacz.wiks.eu/tagi/?d=gchart_m201504_1_.js</a><br>
+</p>
+<p>
+Backend wykonany w Pythonie analizuje kilka tytułów prasowych lokalnych ze Świnoujścia, oraz kilka krajowych.<br>
+W przypadku krajowych wyszukuje te artykuły, które zawiarają TAG Świnoujście.<br>
+No i wrzuca na <a href="http://paplacz.wiks.eu/">stronę Paplacza</a>, oraz na fan-page <a href="https://www.facebook.com/Paplaczwtrawie/">Fabebook (Paplaczwtrawie)</a>
+i <a href="https://twitter.com/wTrawie">Twitter (@wTrawie)</a>.<br>
+</p>
+<p>
+Paplacz odczytuje także pojawiające się komentarze użytkowników i zamienia je na tagi, bada częstość występowania i z tego właśnie <a href="http://paplacz.wiks.eu/tagi/?d=gchart_m201504_1_.js">rysuje wykresy</a>.<br>
+Wykresy w rozbiciu na lata, miesiące i tygodnie etc...<br>
+TAgi są grupowane, np. SLD i PZPR traktowane jako ten sam - w analizie.<br>
+Paplacz działa jako proces cokwadransowy w CRON z przerwą nocną na analizy zaległych - bardzo starych - komentarzy użytkowników.<br>
+Kiedyś Paplacz działał także wysyłając jako BOT linki poprzez Messenger...
+</p>
+{% endblock %}

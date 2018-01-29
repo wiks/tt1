@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% include "show_req.html" %}
+<div class="small">
+<ul>
+<li>zmiana zawartości okienka wpisywania wysyła &lang;Angular&rang; zapytanie do własnego SUB-URL &quot;{{ url_get_base }}&quot; metodą GET z encodowanym URL,</li>
+{% include "comm_back_operate_descr.html" %}
+<li>po zwróceniu odpowiedź/JSON zamieniana jest na dict a ten wstawiany poprzez Angular do indexa.html,</li>
+</ul>
+</div>
+<p>
+Bardzo serdecznie proszę o wprowadzenie adresu URL<br>
+Adres zostanie poddany analizie, strona pod nim wczytana, wydłubiemy z niej nagłówkowe tagi, a następnie policzymy je w treści.<br>
+</p>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div id="cont-form">
+    <form action="/a" method="post">
+        {% csrf_token %}
+        URL: <input id="myInput" type="text" size="20" name="url" ng-model="iurl"
+                    value="{% if inpurl %}{{ inpurl }}{% endif %}">
+    </form>
+    </div>
+    {% verbatim %}
+    <div ng-if='url_checked !== undefined' id="cont-descr">
+        <p ng-if='mismath_url == true'>...czy też może chodziło o <a href="{{ url_checked }}">&quot;{{ url_checked }}&quot;</a></p>
+        <p ng-if='len_keywords > 0' class="found_tag"><span>znaleziono tagów: {{ len_keywords }} w HEAD META name=&quot;Keywords&quot;</span></p>
+        <p ng-if='len_keywords == 0' class="rest_tag"><span>nie znaleziono tagów w HEAD META name=&quot;Keywords&quot;</span></p>
+    </div>
+    <div ng-if='url_checked !== undefined && output_list !== undefined && output_list.length > 0' id="cont-found">
+        <p>
+            <span ng-repeat="one in output_list">
+                <span ng-if='one[1] === 1' class="found_tag">&quot;{{ one[0] }}&quot; raz</span>
+                <span ng-if='one[1] > 1' class="found_tag">&quot;{{ one[0] }}&quot; --> {{ one[1] }} razy</span>
+                ,
+            </span>
+        </p>
+    </div>
+    <div ng-if='url_checked !== undefined && output_list !== undefined && output_list.length > 0' id="cont-rest">
+        <p ng-if='remain !== undefined && remain.length > 0'>pozostałe tagi:<span class="rest_tag">{{ remain }}</span>- nie występują.</p>
+    </div>
+
+    <div id="cont-2descr" ng-if='url_checked !== undefined && ( output_list === undefined || output_list.length == 0 )'>
+        <p>
+            <span class="none_tag">żadne TAGI nie występują w treści</span>
+            <span ng-if='remain !== undefined && remain.length > 0'>
+                <span class="none_tag">, znalezione to:</span><br>
+                <span class="rest_tag" id="resttag">
+                    {{ remain }}
+                </span>
+            </span>
+        </p>
+    </div>
+    <div id="cont-3descr"><p>
+        <span ng-if='url_checked === undefined' class="none_tag">
+            nie rozpoznałem w tym adresu URL, lub też taki adres nie odpowiada, spróbuj raz jeszcze
+        </span>
+    </p></div>
+</div>
+{% endverbatim %}
+
+<script>
+    var url_for_angular = '{{ testurl }}';
+</script>
+<script src="{% static 'js/mangu.js' %}"></script>
+
+{% endblock %}

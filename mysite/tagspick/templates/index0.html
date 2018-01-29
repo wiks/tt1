@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!--&lt;!&ndash;<script src="//code.jquery.com/jquery-1.10.2.js"></script>&ndash;&gt;-->
+<!--<script src="{% static 'js/jquery-1.10.2.js' %}"></script>-->
+<!--&lt;!&ndash;<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>&ndash;&gt;-->
+<!--<script src="{% static 'js/jquery-ui.js' %}"></script>-->
+<!--<script src="{% static 'js/jq.js' %}"></script>-->
+
+{% include "show_req.html" %}
+<div class="small">
+<ul>
+<li>wciśnięcie przycisku wysyła zapytanie do własnego SUB-URL &quot{{ url_get_base }}&quot metodą GET z encodowanym URL,</li>
+{% include "comm_back_operate_descr.html" %}
+<li>po zwróceniu odpowiedź/JSON zamieniana jest na dict a ten wstawiany poprzez Django/render do index0.html,</li>
+</ul>
+</div>
+<p>
+Bardzo serdecznie proszę o wprowadzenie adresu URL i wciśnięcie przycisku &quot{{ button_label }}&quot <br>
+Adres zostanie poddany analizie, strona pod nim wczytana, wydłubiemy z niej nagłówkowe tagi, a następnie policzymy je w treści.
+</p>
+<div id="cont-form">
+<form action="/0" method="post">
+    {% csrf_token %}
+    URL: <input id="myInput" type="text" size="20" name="url"
+                value="{% if inpurl %}{{ inpurl }}{% endif %}">
+    <input id="myBtn" type="submit" value="{{ button_label }}">
+</form>
+</div>
+
+{% if url_checked %}
+    <div id="cont-descr"><p>
+    {% if mismath_url %}
+        ...czy też może chodziło o <a href="{{ url_checked }}">&quot{{ url_checked }}&quot</a><br>
+    {% endif %}
+    {% if len_keywords > 0 %}
+        <span class="found_tag">znaleziono tagów: {{len_keywords}} w HEAD META name=&quotKeywords&quot</span>
+    {% else %}
+        <span class="rest_tag">nie znaleziono tagów w HEAD META name=&quotKeywords&quot</span>
+    {% endif %}
+    </p></div>
+
+    {% if output_list %}
+        <div id="cont-found"><p>
+        <span class="found_tag">
+        {% for one in output_list %}
+            {% if one.1 == 1 %}
+                &quot{{ one.0 }}&quot raz
+            {% else %}
+                &quot{{ one.0 }}&quot --> {{ one.1 }} razy
+            {% endif %},
+        {% endfor %}
+        </span>
+        </p></div>
+        {% if remain %}
+        <div id="cont-rest"><p>
+        pozostałe tagi:
+        <span class="rest_tag">
+            {{ remain }}
+        </span>
+        - nie występują.
+        </p></div>
+        {% endif %}
+    {% else %}
+        <div id="cont-2descr"><p>
+        <span class="none_tag">żadne TAGI nie występują w treści</span>
+        {% if remain %}
+        <span class="none_tag">, znalezione to:</span><br>
+        <span class="rest_tag" id="resttag">
+            {{ remain }}
+        </span>
+        {% endif %}
+        </p></div>
+    {% endif %}
+{% else %}
+    <div id="cont-3descr"><p>
+        <span class="none_tag">nie rozpoznałem w tym adresu URL, lub też taki adres nie odpowiada, spróbuj raz jeszcze</span>
+    </p></div>
+{% endif %}
+{% endblock %}

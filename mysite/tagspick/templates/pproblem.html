@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<p>...taaa, rozwiązanie to nie jest.</p>
+<p>Wygląda raczej na problem ze stroną... zaraz coś zaradzimy, poczekaj....</p>
+
+<script>
+function leave() {
+  window.location = "{{ main_url }}";
+}
+setTimeout("leave()", 3000);
+</script>
+
+{% endblock %}

@@ -1,0 +1,254 @@
+
+https://bitbucket.org/synic/django-sass
+
+http://sass-lang.com/install
+root@wiks:/home/wiks# apt install sass
+
+
+
+bootstrap
+
+no i coś tam z tymi docami nie tak...
+
+<div id="cont-form">
+<div id="cont-descr">
+
+<div id="cont-found">
+<div id="cont-rest">
+
+lub
+
+<div id="cont-2descr">
+
+-------------
+
+
+
+
+============
+
+
+wiks@wiks:~/Pulpit/tt1$ su
+Hasło:
+root@wiks:/home/wiks/Pulpit/tt1# easy_install -U sphinx
+Searching for sphinx
+Reading https://pypi.python.org/simple/sphinx/
+Downloading https://pypi.python.org/packages/e3/1e/846a3214b75db4154bc505bccb6c9a0dc5ede6a5b335d94e86edcee89850/Sphinx-1.7.0b1.tar.gz#md5=7bb933e6d401a6221b44922c51dc3708
+Best match: Sphinx 1.7.0b1
+Processing Sphinx-1.7.0b1.tar.gz
+Writing /tmp/easy_install-AWhUmh/Sphinx-1.7.0b1/setup.cfg
+Running Sphinx-1.7.0b1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-AWhUmh/Sphinx-1.7.0b1/egg-dist-tmp-e6h9Qv
+warning: no files found matching 'sphinx-autogen.py'
+warning: no files found matching 'sphinx-build.py'
+warning: no files found matching 'sphinx-quickstart.py'
+warning: no files found matching 'sphinx-apidoc.py'
+warning: no files found matching 'sphinx/locale/.tx/config'
+no previously-included directories found matching 'doc/_build'
+no previously-included directories found matching 'sphinx/locale/.tx'
+creating /usr/local/lib/python2.7/dist-packages/Sphinx-1.7.0b1-py2.7.egg
+Extracting Sphinx-1.7.0b1-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding Sphinx 1.7.0b1 to easy-install.pth file
+Installing sphinx-apidoc script to /usr/local/bin
+Installing sphinx-build script to /usr/local/bin
+Installing sphinx-quickstart script to /usr/local/bin
+Installing sphinx-autogen script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/Sphinx-1.7.0b1-py2.7.egg
+Processing dependencies for sphinx
+Searching for typing
+Reading https://pypi.python.org/simple/typing/
+Downloading https://pypi.python.org/packages/ec/cc/28444132a25c113149cec54618abc909596f0b272a74c55bab9593f8876c/typing-3.6.4.tar.gz#md5=5b2ade08d83be488f17b5fe587c27c74
+Best match: typing 3.6.4
+Processing typing-3.6.4.tar.gz
+Writing /tmp/easy_install-uwF24X/typing-3.6.4/setup.cfg
+Running typing-3.6.4/setup.py -q bdist_egg --dist-dir /tmp/easy_install-uwF24X/typing-3.6.4/egg-dist-tmp-5AVhJh
+zip_safe flag not set; analyzing archive contents...
+Moving typing-3.6.4-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding typing 3.6.4 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/typing-3.6.4-py2.7.egg
+Searching for sphinxcontrib-websupport
+Reading https://pypi.python.org/simple/sphinxcontrib-websupport/
+Downloading https://pypi.python.org/packages/c5/6b/f0630436b931ad4f8331a9399ca18a7d447f0fcc0c7178fb56b1aee68d01/sphinxcontrib-websupport-1.0.1.tar.gz#md5=84df26463b1ba65b07f926dbe2055665
+Best match: sphinxcontrib-websupport 1.0.1
+Processing sphinxcontrib-websupport-1.0.1.tar.gz
+Writing /tmp/easy_install-BKPh1c/sphinxcontrib-websupport-1.0.1/setup.cfg
+Running sphinxcontrib-websupport-1.0.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-BKPh1c/sphinxcontrib-websupport-1.0.1/egg-dist-tmp-3dWCop
+creating /usr/local/lib/python2.7/dist-packages/sphinxcontrib_websupport-1.0.1-py2.7.egg
+Extracting sphinxcontrib_websupport-1.0.1-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding sphinxcontrib-websupport 1.0.1 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/sphinxcontrib_websupport-1.0.1-py2.7.egg
+Searching for snowballstemmer>=1.1
+Reading https://pypi.python.org/simple/snowballstemmer/
+Downloading https://pypi.python.org/packages/20/6b/d2a7cb176d4d664d94a6debf52cd8dbae1f7203c8e42426daa077051d59c/snowballstemmer-1.2.1.tar.gz#md5=643b019667a708a922172e33a99bf2fa
+Best match: snowballstemmer 1.2.1
+Processing snowballstemmer-1.2.1.tar.gz
+Writing /tmp/easy_install-Xn81Qn/snowballstemmer-1.2.1/setup.cfg
+Running snowballstemmer-1.2.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Xn81Qn/snowballstemmer-1.2.1/egg-dist-tmp-Je9K0x
+warning: no files found matching '*.py' under directory 'src'
+zip_safe flag not set; analyzing archive contents...
+Moving snowballstemmer-1.2.1-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding snowballstemmer 1.2.1 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/snowballstemmer-1.2.1-py2.7.egg
+Searching for packaging
+Reading https://pypi.python.org/simple/packaging/
+Downloading https://pypi.python.org/packages/c6/70/bb32913de251017e266c5114d0a645f262fb10ebc9bf6de894966d124e35/packaging-16.8.tar.gz#md5=53895cdca04ecff80b54128e475b5d3b
+Best match: packaging 16.8
+Processing packaging-16.8.tar.gz
+Writing /tmp/easy_install-wffNjF/packaging-16.8/setup.cfg
+Running packaging-16.8/setup.py -q bdist_egg --dist-dir /tmp/easy_install-wffNjF/packaging-16.8/egg-dist-tmp-_Rq1GL
+warning: no previously-included files found matching '.travis.yml'
+warning: no previously-included files found matching 'dev-requirements.txt'
+no previously-included directories found matching 'docs/_build'
+no previously-included directories found matching 'tasks'
+zip_safe flag not set; analyzing archive contents...
+Moving packaging-16.8-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding packaging 16.8 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/packaging-16.8-py2.7.egg
+Searching for imagesize
+Reading https://pypi.python.org/simple/imagesize/
+Downloading https://pypi.python.org/packages/53/72/6c6f1e787d9cab2cc733cf042f125abec07209a58308831c9f292504e826/imagesize-0.7.1.tar.gz#md5=976148283286a6ba5f69b0f81aef8052
+Best match: imagesize 0.7.1
+Processing imagesize-0.7.1.tar.gz
+Writing /tmp/easy_install-FqocvV/imagesize-0.7.1/setup.cfg
+Running imagesize-0.7.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-FqocvV/imagesize-0.7.1/egg-dist-tmp-vlrtb5
+zip_safe flag not set; analyzing archive contents...
+Moving imagesize-0.7.1-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding imagesize 0.7.1 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/imagesize-0.7.1-py2.7.egg
+Searching for docutils>=0.11
+Reading https://pypi.python.org/simple/docutils/
+Downloading https://pypi.python.org/packages/84/f4/5771e41fdf52aabebbadecc9381d11dea0fa34e4759b4071244fa094804c/docutils-0.14.tar.gz#md5=c53768d63db3873b7d452833553469de
+Best match: docutils 0.14
+Processing docutils-0.14.tar.gz
+Writing /tmp/easy_install-8dompV/docutils-0.14/setup.cfg
+Running docutils-0.14/setup.py -q bdist_egg --dist-dir /tmp/easy_install-8dompV/docutils-0.14/egg-dist-tmp-mwhf04
+warning: no files found matching 'MANIFEST'
+warning: no previously-included files matching '*.pyc' found under directory '*'
+warning: no previously-included files matching '*~' found under directory '*'
+warning: no previously-included files matching '.DS_Store' found under directory '*'
+zip_safe flag not set; analyzing archive contents...
+docutils.writers.docutils_xml: module references __path__
+docutils.writers.s5_html.__init__: module references __file__
+docutils.writers.odf_odt.__init__: module references __file__
+docutils.writers.pep_html.__init__: module references __file__
+docutils.writers.html4css1.__init__: module references __file__
+docutils.writers.html5_polyglot.__init__: module references __file__
+docutils.writers.latex2e.__init__: module references __file__
+docutils.parsers.rst.directives.misc: module references __file__
+creating /usr/local/lib/python2.7/dist-packages/docutils-0.14-py2.7.egg
+Extracting docutils-0.14-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding docutils 0.14 to easy-install.pth file
+Installing rst2odt.py script to /usr/local/bin
+Installing rst2man.py script to /usr/local/bin
+Installing rst2xetex.py script to /usr/local/bin
+Installing rst2pseudoxml.py script to /usr/local/bin
+Installing rstpep2html.py script to /usr/local/bin
+Installing rst2html5.py script to /usr/local/bin
+Installing rst2html.py script to /usr/local/bin
+Installing rst2xml.py script to /usr/local/bin
+Installing rst2latex.py script to /usr/local/bin
+Installing rst2s5.py script to /usr/local/bin
+Installing rst2html4.py script to /usr/local/bin
+Installing rst2odt_prepstyles.py script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/docutils-0.14-py2.7.egg
+Searching for babel!=2.0,>=1.3
+Reading https://pypi.python.org/simple/babel/
+Downloading https://pypi.python.org/packages/0e/d5/9b1d6a79c975d0e9a32bd337a1465518c2519b14b214682ca9892752417e/Babel-2.5.3.tar.gz#md5=152a6b17fe4110b95675aceb9af9fab2
+Best match: Babel 2.5.3
+Processing Babel-2.5.3.tar.gz
+Writing /tmp/easy_install-vSTkPo/Babel-2.5.3/setup.cfg
+Running Babel-2.5.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-vSTkPo/Babel-2.5.3/egg-dist-tmp-V2kwIN
+warning: no previously-included files matching '*' found under directory 'docs/_build'
+warning: no previously-included files matching '*.pyc' found under directory 'tests'
+warning: no previously-included files matching '*.pyo' found under directory 'tests'
+creating /usr/local/lib/python2.7/dist-packages/Babel-2.5.3-py2.7.egg
+Extracting Babel-2.5.3-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding Babel 2.5.3 to easy-install.pth file
+Installing pybabel script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/Babel-2.5.3-py2.7.egg
+Searching for alabaster<0.8,>=0.7
+Reading https://pypi.python.org/simple/alabaster/
+Downloading https://pypi.python.org/packages/d0/a5/e3a9ad3ee86aceeff71908ae562580643b955ea1b1d4f08ed6f7e8396bd7/alabaster-0.7.10.tar.gz#md5=7934dccf38801faa105f6e7b4784f493
+Best match: alabaster 0.7.10
+Processing alabaster-0.7.10.tar.gz
+Writing /tmp/easy_install-MYMS5C/alabaster-0.7.10/setup.cfg
+Running alabaster-0.7.10/setup.py -q bdist_egg --dist-dir /tmp/easy_install-MYMS5C/alabaster-0.7.10/egg-dist-tmp-tyRj4z
+warning: no files found matching 'README.md'
+warning: no previously-included files matching '.*.swp' found under directory 'alabaster'
+zip_safe flag not set; analyzing archive contents...
+alabaster.__init__: module references __file__
+creating /usr/local/lib/python2.7/dist-packages/alabaster-0.7.10-py2.7.egg
+Extracting alabaster-0.7.10-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding alabaster 0.7.10 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/alabaster-0.7.10-py2.7.egg
+Searching for Pygments>=2.0
+Reading https://pypi.python.org/simple/Pygments/
+Downloading https://pypi.python.org/packages/71/2a/2e4e77803a8bd6408a2903340ac498cb0a2181811af7c9ec92cb70b0308a/Pygments-2.2.0.tar.gz#md5=13037baca42f16917cbd5ad2fab50844
+Best match: Pygments 2.2.0
+Processing Pygments-2.2.0.tar.gz
+Writing /tmp/easy_install-pc_DAz/Pygments-2.2.0/setup.cfg
+Running Pygments-2.2.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-pc_DAz/Pygments-2.2.0/egg-dist-tmp-kYLqRV
+creating /usr/local/lib/python2.7/dist-packages/Pygments-2.2.0-py2.7.egg
+Extracting Pygments-2.2.0-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding Pygments 2.2.0 to easy-install.pth file
+Installing pygmentize script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/Pygments-2.2.0-py2.7.egg
+Searching for pyparsing
+Reading https://pypi.python.org/simple/pyparsing/
+Downloading https://pypi.python.org/packages/3c/ec/a94f8cf7274ea60b5413df054f82a8980523efd712ec55a59e7c3357cf7c/pyparsing-2.2.0.tar.gz#md5=0214e42d63af850256962b6744c948d9
+Best match: pyparsing 2.2.0
+Processing pyparsing-2.2.0.tar.gz
+Writing /tmp/easy_install-Vz9QhX/pyparsing-2.2.0/setup.cfg
+Running pyparsing-2.2.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Vz9QhX/pyparsing-2.2.0/egg-dist-tmp-4UZ0Qx
+zip_safe flag not set; analyzing archive contents...
+Moving pyparsing-2.2.0-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding pyparsing 2.2.0 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/pyparsing-2.2.0-py2.7.egg
+Finished processing dependencies for sphinx
+root@wiks:/home/wiks/Pulpit/tt1# cd docs
+root@wiks:/home/wiks/Pulpit/tt1/docs# pip install rst2pdf
+Collecting rst2pdf
+  Downloading rst2pdf-0.93.tar.gz (1.3MB)
+    100% |████████████████████████████████| 1.3MB 306kB/s
+Requirement already satisfied: Pygments in /usr/local/lib/python2.7/dist-packages/Pygments-2.2.0-py2.7.egg (from rst2pdf)
+Requirement already satisfied: docutils in /usr/local/lib/python2.7/dist-packages/docutils-0.14-py2.7.egg (from rst2pdf)
+Collecting pdfrw (from rst2pdf)
+  Downloading pdfrw-0.4-py2.py3-none-any.whl (69kB)
+    100% |████████████████████████████████| 71kB 906kB/s
+Collecting reportlab>=2.4 (from rst2pdf)
+  Downloading reportlab-3.4.0-cp27-cp27mu-manylinux1_i686.whl (3.6MB)
+    100% |████████████████████████████████| 3.6MB 164kB/s
+Requirement already satisfied: setuptools in /usr/lib/python2.7/dist-packages (from rst2pdf)
+Requirement already satisfied: pip>=1.4.1 in /usr/local/lib/python2.7/dist-packages (from reportlab>=2.4->rst2pdf)
+Collecting pillow>=2.4.0 (from reportlab>=2.4->rst2pdf)
+  Downloading Pillow-5.0.0-cp27-cp27mu-manylinux1_i686.whl (5.6MB)
+    100% |████████████████████████████████| 5.6MB 100kB/s
+Building wheels for collected packages: rst2pdf
+  Running setup.py bdist_wheel for rst2pdf ... done
+  Stored in directory: /root/.cache/pip/wheels/d4/a2/dc/c8abee5856cdb2ce06d3f61a15dc2563516f383e04c260a055
+Successfully built rst2pdf
+Installing collected packages: pdfrw, pillow, reportlab, rst2pdf
+Successfully installed pdfrw-0.4 pillow-5.0.0 reportlab-3.4.0 rst2pdf-0.93.dev0
+root@wiks:/home/wiks/Pulpit/tt1/docs#
+
+
+extensions = [
+    ...
+    'rst2pdf.pdfbuilder'
+              ]
+
+sphinx-build -b pdf ./ _build/pdf
+
+
+https://envato.com/blog/css3-typography-code-snippets/
+

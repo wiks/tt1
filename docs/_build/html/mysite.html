@@ -1,0 +1,203 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>mysite &#8212; dev-test-task 1.0 - dokumentacja</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
+    <link rel="prev" title="Welcome to dev-test-task’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mysite">
+<h1>mysite<a class="headerlink" href="#mysite" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p>beautifulsoup4==4.6.0
+bs4==0.0.1
+certifi==2018.1.18
+chardet==3.0.4
+Django==1.8
+idna==2.6
+lxml==4.1.1
+nltk==3.2.5
+requests==2.18.4
+selenium==3.8.1
+six==1.11.0
+urllib3==1.22</p>
+<span class="target" id="module-tagspick.text2tags"></span><dl class="class">
+<dt id="tagspick.text2tags.MyTags">
+<em class="property">class </em><code class="descclassname">tagspick.text2tags.</code><code class="descname">MyTags</code><a class="reference internal" href="_modules/tagspick/text2tags.html#MyTags"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.text2tags.MyTags" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>narzędziałki związane z zamianą textu (np treści strony WEB) na tagi, wraz z ich policzeniem NLTK)
+oraz wyszukaniem w nich konkretnych KEYsów i wypluciu wszystkiego ładnie dla zobrazowania WEBowego</p>
+<dl class="method">
+<dt id="tagspick.text2tags.MyTags.find_and_count_tags_in_content">
+<code class="descname">find_and_count_tags_in_content</code><span class="sig-paren">(</span><em>text_to_analise</em>, <em>keywords</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/text2tags.html#MyTags.find_and_count_tags_in_content"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.text2tags.MyTags.find_and_count_tags_in_content" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>wyszukaj podane tagi w treści, zlicz ilość wystąpień i analizuj
+utwórz: listę z posortowanymi tagami i ilością ich wystąpień w treści strony
+oraz string-unicode - pozostałe TAGi które nie występują w treści strony
+:param text_to_analise:
+:param keywords:
+:return:
+# output_list ——-&gt; [(u’pogoda», 22), (u’gry», 6), (u’kobieta», 3), (u’sport», 3), …] ,
+# remain ——-&gt; portal, hub, www, tematyczny, horyzontalny, wertykalny, wyszukiwarka, katalog, internet,
+# bezpłatne, darmowe, konta, e-mail, strony, czat, wirtualne, kartki, wirtualna, reklama, marketing, informacje,
+# wiadomosci, turystyka, komputery, rozrywka, prognoza, program TV, WAP, RMF FM,</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="tagspick.text2tags.MyTags.text2tags">
+<em class="property">static </em><code class="descname">text2tags</code><span class="sig-paren">(</span><em>text_to_tags_and_hits</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/text2tags.html#MyTags.text2tags"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.text2tags.MyTags.text2tags" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>analizuj text na tagi, sortuj wynik według ilości wystąpień
+:param text_to_tags_and_hits:
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-tagspick.myurlsy"></span><dl class="class">
+<dt id="tagspick.myurlsy.MyUrls">
+<em class="property">class </em><code class="descclassname">tagspick.myurlsy.</code><code class="descname">MyUrls</code><a class="reference internal" href="_modules/tagspick/myurlsy.html#MyUrls"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.myurlsy.MyUrls" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>narzędziałki związane z adresem URL domyślnym i próbą utworzenia z niego URL
+oraz sprawdzeniem, czy działa</p>
+<dl class="method">
+<dt id="tagspick.myurlsy.MyUrls.find_first_exists_url">
+<code class="descname">find_first_exists_url</code><span class="sig-paren">(</span><em>inpurl</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/myurlsy.html#MyUrls.find_first_exists_url"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.myurlsy.MyUrls.find_first_exists_url" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>zmień coś, spróbuj z tego zrobić adres URL
+:param inpurl:
+:return:</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="tagspick.myurlsy.MyUrls.get_keywords_from_meta_tags">
+<em class="property">static </em><code class="descname">get_keywords_from_meta_tags</code><span class="sig-paren">(</span><em>url_checked</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/myurlsy.html#MyUrls.get_keywords_from_meta_tags"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.myurlsy.MyUrls.get_keywords_from_meta_tags" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>pod podanym URL pobieram treść i wyszukuję KEYWORDS w HEAD:
+#  &lt;meta name=”keywords” content=”HTML,CSS,XML,JavaScript”&gt;
+:param url_checked:
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-tagspick.views"></span><dl class="function">
+<dt id="tagspick.views.index">
+<code class="descclassname">tagspick.views.</code><code class="descname">index</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/views.html#index"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.views.index" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>strona główna, opis i linki do dwóch rozwiązań
+:param request:
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tagspick.views.index0">
+<code class="descclassname">tagspick.views.</code><code class="descname">index0</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/views.html#index0"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.views.index0" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>generuje stronkę dla zwykłego BUTTONem formularza
+:param request:
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tagspick.views.indexa">
+<code class="descclassname">tagspick.views.</code><code class="descname">indexa</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/views.html#indexa"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.views.indexa" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>generuję stronkę dla Angular’a
+:param request:
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tagspick.views.testurl">
+<code class="descclassname">tagspick.views.</code><code class="descname">testurl</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tagspick/views.html#testurl"><span class="viewcode-link">[źródło]</span></a><a class="headerlink" href="#tagspick.views.testurl" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>odpowiadacz dla zwykłego requesta i dla Angular’a
+<a class="reference external" href="http://localhost:8000/testurl?url=interia.pl">http://localhost:8000/testurl?url=interia.pl</a>
+<a class="reference external" href="http://tt1/testurl?url=interia.pl">http://tt1/testurl?url=interia.pl</a>
+:param request:
+:return:
+{
+„len_keywords”: 39, &lt;– ilość znalezionych w nim TAGów
+„url_checked”: „<a class="reference external" href="http://interia.pl">http://interia.pl</a>”, &lt;– adres dopasowany i analizowany
+„output_list”: &lt;– występujące w treści tagi i ilości ich wystąpień
+[[„pogoda”, 22], [„gry”, 6], [„kobieta”, 3], [„sport”, 3],
+[„biznes”, 3], [„encyklopedia”, 1], [„poczta”, 1], [„czateria”, 1], [„internet”, 1], [„fm”, 1], [„motoryzacja”, 1],
+[„informacje”, 1]]
+„remain”: &lt;– jako string - pozostałe tagi z KEYWORDS, rozdzielone przecinkami
+„portal, hub, www, tematyczny, horyzontalny, wertykalny, wyszukiwarka, katalog,
+bezpu0142atne, darmowe, konta, e-mail, strony, czat, wirtualne, kartki, wirtualna, reklama, marketing, wiadomosci,
+turystyka, komputery, rozrywka, prognoza, program TV, WAP, RMF FM, „,
+„mismath_url”: true, &lt;– gdy url sprawdzany różni się od tego wpisanego
+}</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="poprzedni rozdział">Welcome to dev-test-task’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Szybkie wyszukiwanie</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Szukaj" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, WikS.eu.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/mysite.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
