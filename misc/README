@@ -1,3 +1,23 @@
+apka dostępna:
+http://wikswiks.pythonanywhere.com/
+
+dokumentacja:
+http://wikswiks.pythonanywhere.com/docs/
+
+github:
+https://github.com/wiks/tt1
+
+versja githubowa jest 'poprawiona' do pythonanywhere o :
+dodanie ALLOWED_HOSTS
+usunięcie wszystkich logging (korzystam z tych pythonowych)
+
+testowanie:
+$ python manage.py test
+
+testowanie działa w 100% gdy jest zainstalowane selenium i geckodriver, w innym wypadku ignoruje testy związane z selenium
+
+==============================
+
 jeśli pracujemy z VIRTUALENV, należy ustawić DEBUG = True w mysite/mysite/settings.py
 
 wiks@wiks:~/Pulpit/tt1$ cd mysite
